@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.link-header {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #989D9C;
+    cursor: pointer;
+    margin-right: 23px;
+}
+
+.logo-img {
+    width: 568px;
+    height: 500px;
+    margin-left: 125px;
+    display: inline-block;
+}
+
+.button-header {
+    background: #665AE1;
+    border-radius: 20.5px;
+    width: 130px;
+    height: 41px;
+    border: none;
+    color: #FFF;
+    font-weight: 600;
+    line-height: 29px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header {
+    margin: 44px 0 144px 76px;
+}
+
+section {
+    display: inline-block;
+    margin-left: 86px;
+}
+
+h1 {
+    color: #515151;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 122px;
+}
+
+h2 {
+    color: #515151;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 71px;
+}
+
+p {
+    color: #848484;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    width: 500px;
+    margin-top: 32px;
+    margin-bottom: 65px;
+}
+
+.button-main {
+    background: #ADFF00;
+    border-radius: 20.5px;
+    width: 239px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 20px;
+
+    }
+
+    .logo-img {
+        position: static;
+        width: 100%;
+        height: auto;
+        max-width: 90%;
+        margin: 149px 22px 0 14px;
+    }
+
+    h1 {
+        line-height: normal;
+        font-size: 50px;
+        width: auto;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: normal;
+        width: auto;
+        text-align: center;
+        
+
+    }
+
+    .button-main {
+        display: block;
+        margin: 0 auto;
+        font-size: 28px;
+    }
+}
