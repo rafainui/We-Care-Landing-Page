@@ -57,25 +57,25 @@ body {
   width: 568px;
 }
 
-.hero-text {
+.main-content {
   max-width: 500px;
 }
 
-.hero-text h1 {
+.main-content h1 {
   color: #515151;
   font-size: 100px;
   font-weight: 900;
   line-height: 1.1;
 }
 
-.hero-text h2 {
+.main-content h2 {
   color: #515151;
   font-size: 58px;
   font-weight: 500;
   line-height: 1.2;
 }
 
-.hero-text p {
+.main-content p {
   color: #848484;
   font-size: 24px;
   font-weight: 500;
@@ -107,15 +107,15 @@ body {
     text-align: center;
   }
 
-  .hero-text h1 {
+  .main-content h1 {
     font-size: 50px;
   }
 
-  .hero-text h2 {
+  .main-content h2 {
     font-size: 30px;
   }
 
-  .hero-text p {
+  .main-content p {
     display: none;
   }
 
