@@ -1,140 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.header {
+  padding: 44px 76px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  flex-wrap: wrap;
 }
 
 .link-header {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29px;
-    color: #989D9C;
-    cursor: pointer;
-    margin-right: 23px;
-}
-
-.logo-img {
-    width: 568px;
-    height: 500px;
-    margin-left: 125px;
-    display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #989D9C;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .button-header {
-    background: #665AE1;
-    border-radius: 20.5px;
-    width: 130px;
-    height: 41px;
-    border: none;
-    color: #FFF;
-    font-weight: 600;
-    line-height: 29px;
-    font-size: 24px;
-    cursor: pointer;
+  background-color: #665AE1;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  border-radius: 20.5px;
+  width: 130px;
+  height: 41px;
+  cursor: pointer;
 }
 
-header {
-    margin: 44px 0 144px 76px;
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 86px;
+  padding: 100px 76px;
+  flex-wrap: wrap;
 }
 
-section {
-    display: inline-block;
-    margin-left: 86px;
+.logo-img {
+  max-width: 100%;
+  height: auto;
+  width: 568px;
 }
 
-h1 {
-    color: #515151;
-    font-size: 100px;
-    font-weight: 900;
-    line-height: 122px;
+.hero-text {
+  max-width: 500px;
 }
 
-h2 {
-    color: #515151;
-    font-size: 58px;
-    font-weight: 500;
-    line-height: 71px;
+.hero-text h1 {
+  color: #515151;
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 1.1;
 }
 
-p {
-    color: #848484;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29px;
-    width: 500px;
-    margin-top: 32px;
-    margin-bottom: 65px;
+.hero-text h2 {
+  color: #515151;
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  color: #848484;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 32px 0 65px;
 }
 
 .button-main {
-    background: #ADFF00;
-    border-radius: 20.5px;
-    width: 239px;
-    height: 64px;
-    border: none;
-    cursor: pointer;
-    color: #000;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 34px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #ADFF00;
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  border: none;
+  border-radius: 20.5px;
+  width: 239px;
+  height: 64px;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 900px) {
-    header {
-        display: none;
-    }
+/* Responsividade */
+@media (max-width: 900px) {
+  .header {
+    display: none;
+  }
 
-    p {
-        display: none;
-    }
+  .main {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
 
-    main {
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0;
-    }
+  .hero-text h1 {
+    font-size: 50px;
+  }
 
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 0 20px;
+  .hero-text h2 {
+    font-size: 30px;
+  }
 
-    }
+  .hero-text p {
+    display: none;
+  }
 
-    .logo-img {
-        position: static;
-        width: 100%;
-        height: auto;
-        max-width: 90%;
-        margin: 149px 22px 0 14px;
-    }
+  .logo-img {
+    margin-top: 40px;
+    width: 90%;
+  }
 
-    h1 {
-        line-height: normal;
-        font-size: 50px;
-        width: auto;
-        text-align: center;
-        margin-top: 24px;
-    }
-
-    h2 {
-        font-size: 30px;
-        line-height: normal;
-        width: auto;
-        text-align: center;
-        
-
-    }
-
-    .button-main {
-        display: block;
-        margin: 0 auto;
-        font-size: 28px;
-    }
+  .button-main {
+    margin-top: 20px;
+    width: 80%;
+  }
 }
