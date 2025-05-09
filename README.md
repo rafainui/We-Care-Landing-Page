@@ -32,10 +32,7 @@ Neste projeto eu:
 
 ## 📷 Preview
 
-<div style="display: flex; gap: 10px;">
-  <img src="./IMAGEMDOPROJETOFULL.png" alt="Versão Desktop" width="48%">
-  <img src="./IMAGEMDOPROJETORESPONSIVA.png" alt="Versão Mobile" width="48%">
-</div>
+![Imagem do projeto](./img/ReadmeApres.png)
 
 ## 📌 Status
 
